@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Open+Sans:wght@300;400;500;600;700;800&family=Phudu:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #393e46; 
+  margin: 0;
+  padding: 0;
+}
+
+.blueCol{
+    /* background: #0041F5; */
+    background: #f96d00;
+}
+
+.blueCol:hover{
+    background: #222831;
+}
+.blueColTxt:hover{
+    color: #f96d00;
+}
+.blueColTxt2{
+    color: #f96d00;
+}
+
+.LinkLog:hover{
+    background: #f96d00;
+}
+
+
+.blueColBorder{
+    
+    border-color: #f96d00;
+}
+
+
+*{
+    font-family: 'Open Sans', sans-serif ;
+}
+
+.underL{
+    text-decoration-color: #f2f2f2;
+}
+.underPur{
+    text-decoration-color: #f2f2f2;
+}
+
+.borBLue{
+    border-color: #f2f2f2;
+}
+
+.titleT{
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+
+.bold-placeholder::placeholder {
+    font-weight:500; /* Make the placeholder text bold */
+    color: gray; /* You can also adjust the color if needed */
+  }
+
+
+.zInd{
+    z-index: 1000;
+}
+
+
+.blueCol2{
+    /* background: #0041F5; */
+    background: #f2f2f2;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image:
+      linear-gradient(#FFF 16px, transparent 0) ,
+      linear-gradient(#f96d00 16px, transparent 0) ,
+      linear-gradient(#f96d00 16px, transparent 0) ,
+      linear-gradient(#FFF 16px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left top , left bottom , right top , right bottom;
+    animation: rotate 1s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(0deg)
+    }
+    50% {
+      width: 30px;
+      height: 30px;
+      transform: rotate(180deg)
+    }
+    100% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(360deg)
+    }
+  }
+
+
+  .cool-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f96d00 ;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+.loader1 {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+  }
+  
+  @keyframes shadowPulse {
+    33% {
+      background: #FFF;
+      box-shadow: -24px 0 #f96d00, 24px 0 #FFF;
+    }
+    66% {
+      background: #f96d00;
+      box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    }
+    100% {
+      background: #FFF;
+      box-shadow: -24px 0 #FFF, 24px 0 #f96d00;
+    }
+  }
+  
